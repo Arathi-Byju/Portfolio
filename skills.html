@@ -19,10 +19,11 @@
 
 <body>
 
+    <!-- Navigation -->
     <header class="header">
 
         <a href="index.html" class="logo">
-             <img src="Assets/image/logo.svg" alt="Lumora logo" class="logo-img">
+            <img src="Assets/image/logo.svg" alt="Lumora logo" class="logo-img">
             Lumora
         </a>
 
@@ -32,70 +33,73 @@
             <a href="education.html">Education</a>
             <a href="skills.html" class="active">Skills</a>
             <a href="projects.html">Projects</a>
-             <a href="certificates.html">Certificates</a>
+            <a href="certificates.html">Certificates</a>
             <a href="contact.html">Contact</a>
         </nav>
 
         <a href="contact.html" class="connect-btn">Let's Connect</a>
 
-        <button class="menu-btn" id="menu-btn">☰</button>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu">☰</button>
 
     </header>
-
 
     <main class="page-container">
 
         <div class="section-heading">
             <span>MY KNOWLEDGE</span>
-            <h1>Skills & Technologies</h1>
+            <h1>Skills &amp; Technologies</h1>
             <p>Tools and technologies I'm learning and exploring.</p>
         </div>
-
 
         <div class="skills-container">
 
             <div class="skill-card">
                 <div class="skill-icon">01</div>
                 <h2>Web Development</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
+                <ul class="skill-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
             </div>
-
 
             <div class="skill-card">
                 <div class="skill-icon">02</div>
                 <h2>Programming</h2>
-                <p>Python</p>
-                    <p>PHP</p>
+                <ul class="skill-tags">
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                </ul>
             </div>
-
 
             <div class="skill-card">
                 <div class="skill-icon">03</div>
                 <h2>Database</h2>
-                <p>MySQL</p>
-                <p>Database Fundamentals</p>
+                <ul class="skill-tags">
+                    <li>MySQL</li>
+                    <li>Database Fundamentals</li>
+                </ul>
             </div>
-
 
             <div class="skill-card">
                 <div class="skill-icon">04</div>
                 <h2>Development Tools</h2>
-                <p>Visual Studio Code</p>
-                <p>GitHub</p>
+                <ul class="skill-tags">
+                    <li>Visual Studio Code</li>
+                    <li>GitHub</li>
+                </ul>
             </div>
 
         </div>
 
     </main>
 
-
+    <!-- Footer -->
     <footer>
         <p>© 2026 Arathi Byju · Lumora</p>
-        <p>Designed with curiosity and hope.</p>
+        <p>Designed with hope, built with curiosity.</p>
     </footer>
-
 
     <script src="Assets/js/script.js"></script>
 

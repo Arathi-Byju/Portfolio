@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- Navigation -->
     <header class="header">
 
         <a href="index.html" class="logo">
@@ -32,16 +33,15 @@
             <a href="education.html">Education</a>
             <a href="skills.html">Skills</a>
             <a href="projects.html" class="active">Projects</a>
-             <a href="certificates.html">Certificates</a>
+            <a href="certificates.html">Certificates</a>
             <a href="contact.html">Contact</a>
         </nav>
 
         <a href="contact.html" class="connect-btn">Let's Connect</a>
 
-        <button class="menu-btn" id="menu-btn">☰</button>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu">☰</button>
 
     </header>
-
 
     <main class="page-container">
 
@@ -51,18 +51,23 @@
             <p>A collection of my academic work and ideas.</p>
         </div>
 
-
         <div class="projects-container">
 
             <div class="project-card">
 
-                <!-- <div class="project-number">01</div> -->
-
                 <h2>RoadRescue</h2>
 
-                <p style="text-align: justify;">
-                    RoadRescue is a web-based vehicle breakdown assistance system designed to help users find nearby mechanics during unexpected vehicle troubles. It uses location-based services to identify available mechanics and allows users to send service requests conveniently. The application enables mechanics to view incoming requests, accept or reject them, and manage assistance based on their availability. It also provides users with a simple way to track their assistance requests and connect with service providers. The main goal of RoadRescue is to make roadside assistance simple, accessible and reliable.
+                <p>
+                    A web-based vehicle breakdown assistance system that helps users
+                    find nearby mechanics during unexpected vehicle trouble. The goal
+                    is to make roadside assistance simple, accessible and reliable.
                 </p>
+
+                <ul class="project-features">
+                    <li>Finds available mechanics nearby using location-based services</li>
+                    <li>Lets users send service requests and track their status</li>
+                    <li>Lets mechanics view, accept or reject requests based on availability</li>
+                </ul>
 
                 <div class="project-tags">
                     <span>Laravel</span>
@@ -72,27 +77,9 @@
 
                 <span class="project-status">Academic Project</span>
 
-            </div>
-
-
-            <!-- <div class="project-card">
-
-                <div class="project-number">02</div>
-
-                <h2>Online Tutoring Platform</h2>
-
-                <p>
-                    An online tutoring platform concept
-                    designed to connect students and teachers
-                    based on learning requirements.
-                </p>
-
-                <div class="project-tags">
-                    <span>Web Development</span>
-                    <span>Python</span>
-                </div> -->
-
-                <!-- <span class="project-status">Project Idea</span> -->
+                <!-- Add when ready:
+                <a href="YOUR-REPO-LINK" target="_blank" rel="noopener noreferrer" class="btn primary-btn">View on GitHub</a>
+                -->
 
             </div>
 
@@ -100,12 +87,11 @@
 
     </main>
 
-
+    <!-- Footer -->
     <footer>
         <p>© 2026 Arathi Byju · Lumora</p>
-        <p>Designed with curiosity and hope.</p>
+        <p>Designed with hope, built with curiosity.</p>
     </footer>
-
 
     <script src="Assets/js/script.js"></script>
 
