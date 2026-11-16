@@ -1759,19 +1759,110 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Center the project card(s) */
+/* PROJECTS PAGE: STACK CARDS VERTICALLY */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 610px);
     justify-content: center;
+    gap: 35px;
 }
 
 .project-card {
     width: 100%;
-    max-width: 487px;
+    max-width: 610px;
+    box-sizing: border-box;
+}
+
+/* FEATURES INSIDE PROJECT CARDS */
+.project-features {
+    margin: 0 0 20px;
+    padding-left: 24px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.project-features li {
+    padding-left: 2px;
+    margin-bottom: 3px;
+}
+
+/* TRAVELOGUE SCREENSHOT PHOTO FRAME */
+.project-preview {
+    width: 100%;
+    height: 290px;
+    margin: 22px 0;
+    padding: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(189, 131, 245, 0.45);
+    border-radius: 13px;
+    background: #100b19;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 7px;
+    transition: transform 0.4s ease;
+}
+
+.project-preview:hover img {
+    transform: scale(1.025);
+}
+
+.project-actions {
+    margin-top: 22px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 11px 22px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background: linear-gradient(120deg, var(--purple), var(--light-purple));
+    color: #160d22;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(189, 131, 245, 0.2);
 }
 
 .logo-img {
     width: 34px;
     height: 34px;
+}
+
+
+
+
+/* ================================
+   PROJECTS PAGE RESPONSIVE LAYOUT
+================================ */
+
+@media (max-width: 800px) {
+    .projects-container {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 610px;
+    }
+}
+
+@media (max-width: 550px) {
+    .project-preview {
+        height: 210px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
 }
