@@ -1866,3 +1866,22 @@ html, body {
         padding: 25px;
     }
 }
+
+
+
+.project-image {
+    border: 2px solid #a855f7;
+    border-radius: 14px;
+    padding: 6px;
+    background: rgba(168, 85, 247, 0.1);
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
