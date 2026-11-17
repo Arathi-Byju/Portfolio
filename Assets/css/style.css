@@ -1885,3 +1885,137 @@ html, body {
     border-radius: 10px;
     display: block;
 }
+
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 12px;
+    margin-top: 16px;
+}
+
+.project-links .btn {
+    margin-left: auto;
+    background: #a855f7;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-links .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(168, 85, 247, 0.35);
+}
+
+.ongoing-msg {
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #e9d5ff;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.ongoing-msg.show {
+    opacity: 1;
+}
+
+
+/* Same box style for the card and the screenshot frame */
+.project-card,
+.project-image {
+    border-radius: 12px;
+    border: 2px solid #a855f7;
+}
+
+.project-image {
+    overflow: hidden;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;   /* frame already rounds it */
+}
+
+
+
+.project-card h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.project-image {
+    margin-bottom: 20px;
+}
+
+
+.project-card {
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.project-image {
+    margin-bottom: 20px;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 610px;       /* card width from your screenshot */
+    padding: 44px;          /* space between the outer border and everything inside */
+    box-sizing: border-box;
+}
+
+.project-card h2 {
+    margin: 0 0 24px;
+}
+
+.project-image {
+    margin-bottom: 28px;    /* gap between picture box and description */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card p {
+    margin: 0 0 24px;
+    line-height: 1.8;
+}
+
+.project-features {
+    margin: 0 0 24px;
+}
+
+.project-tags {
+    margin-bottom: 28px;
+}
+
+@media (max-width: 600px) {
+    .project-card {
+        padding: 24px;
+    }
+}
